@@ -1,0 +1,15 @@
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/usr/local/rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20180106-3775-1mxbb8d.rb extconf.rb
+creating Makefile
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20180106-3775-1jebw35

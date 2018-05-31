@@ -1,0 +1,22 @@
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+/usr/local/rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20180106-3775-j6lz1p.rb extconf.rb
+checking for main() in -lstdc++... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/unf_ext-0.0.7.4/mkmf.log
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+cc1plus: warning: command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++
+linking shared-object unf_ext.so
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+make "DESTDIR=" install
+/usr/bin/install -m 0755 unf_ext.so ./.gem.20180106-3775-1qu4k8s

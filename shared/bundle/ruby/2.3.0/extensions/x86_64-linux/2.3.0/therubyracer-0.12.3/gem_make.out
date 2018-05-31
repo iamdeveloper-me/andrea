@@ -1,0 +1,47 @@
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+/usr/local/rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20180106-3775-srnufi.rb extconf.rb
+checking for main() in -lpthread... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/therubyracer-0.12.3/mkmf.log
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" clean
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR="
+compiling external.cc
+compiling value.cc
+compiling primitive.cc
+compiling string.cc
+compiling trycatch.cc
+compiling init.cc
+compiling date.cc
+compiling constraints.cc
+compiling invocation.cc
+compiling object.cc
+compiling backref.cc
+compiling template.cc
+compiling exception.cc
+compiling rr.cc
+compiling message.cc
+compiling constants.cc
+compiling script.cc
+compiling heap.cc
+compiling context.cc
+compiling stack.cc
+compiling accessor.cc
+compiling handles.cc
+compiling signature.cc
+compiling gc.cc
+compiling locker.cc
+compiling function.cc
+compiling array.cc
+compiling v8.cc
+linking shared-object v8/init.so
+
+current directory: /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" install
+/usr/bin/install -m 0755 init.so ./.gem.20180106-3775-12o5gow/v8

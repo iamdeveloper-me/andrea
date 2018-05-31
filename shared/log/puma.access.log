@@ -1,0 +1,115 @@
+=== puma startup: 2018-01-06 03:24:58 +0000 ===
+=== puma startup: 2018-01-06 03:24:58 +0000 ===
+=== puma startup: 2018-01-06 03:40:46 +0000 ===
+=== puma startup: 2018-01-06 03:40:46 +0000 ===
+RuntimeError: There is already a server bound to: /home/deploy/wine-grape/shared/tmp/sockets/wine-grape-puma.sock
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:363:in `add_unix_listener'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:141:in `block in parse'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:88:in `each'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:88:in `parse'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/runner.rb:144:in `load_and_bind'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/single.rb:87:in `run'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/launcher.rb:183:in `run'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/cli.rb:77:in `run'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/bin/puma:10:in `<top (required)>'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/bin/puma:23:in `load'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/bin/puma:23:in `<top (required)>'
+=== puma startup: 2018-01-06 03:40:51 +0000 ===
+=== puma startup: 2018-01-06 05:13:39 +0000 ===
+=== puma startup: 2018-01-06 05:13:39 +0000 ===
+RuntimeError: There is already a server bound to: /home/deploy/wine-grape/shared/tmp/sockets/wine-grape-puma.sock
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:363:in `add_unix_listener'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:141:in `block in parse'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:88:in `each'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/binder.rb:88:in `parse'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/runner.rb:144:in `load_and_bind'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/single.rb:87:in `run'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/launcher.rb:183:in `run'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/lib/puma/cli.rb:77:in `run'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/gems/puma-3.11.0/bin/puma:10:in `<top (required)>'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/bin/puma:23:in `load'
+  /home/deploy/wine-grape/shared/bundle/ruby/2.3.0/bin/puma:23:in `<top (required)>'
+=== puma startup: 2018-01-06 05:13:44 +0000 ===
+=== puma startup: 2018-01-08 01:03:51 +0000 ===
+=== puma startup: 2018-01-08 01:48:49 +0000 ===
+=== puma startup: 2018-01-08 14:24:21 +0000 ===
+=== puma startup: 2018-01-08 14:29:41 +0000 ===
+=== puma startup: 2018-01-08 19:43:22 +0000 ===
+=== puma startup: 2018-01-11 01:27:08 +0000 ===
+=== puma startup: 2018-01-11 02:13:06 +0000 ===
+=== puma startup: 2018-01-11 05:06:14 +0000 ===
+=== puma startup: 2018-01-11 11:05:22 +0000 ===
+=== puma startup: 2018-01-11 11:05:22 +0000 ===
+=== puma startup: 2018-01-11 14:07:23 +0000 ===
+=== puma startup: 2018-01-11 15:39:15 +0000 ===
+=== puma startup: 2018-01-11 15:59:40 +0000 ===
+=== puma startup: 2018-01-11 16:23:32 +0000 ===
+=== puma startup: 2018-01-11 16:30:33 +0000 ===
+=== puma startup: 2018-01-12 01:46:10 +0000 ===
+=== puma startup: 2018-01-12 02:32:28 +0000 ===
+=== puma startup: 2018-01-12 02:38:28 +0000 ===
+=== puma startup: 2018-01-12 02:59:22 +0000 ===
+=== puma startup: 2018-01-12 02:59:22 +0000 ===
+=== puma startup: 2018-01-12 03:15:30 +0000 ===
+=== puma startup: 2018-01-12 03:35:52 +0000 ===
+=== puma startup: 2018-01-12 03:47:22 +0000 ===
+=== puma startup: 2018-01-12 04:50:22 +0000 ===
+=== puma startup: 2018-01-12 05:09:11 +0000 ===
+=== puma startup: 2018-01-12 11:27:54 +0000 ===
+=== puma startup: 2018-01-12 11:56:26 +0000 ===
+=== puma startup: 2018-01-12 12:11:16 +0000 ===
+=== puma startup: 2018-01-13 14:52:19 +0000 ===
+=== puma startup: 2018-01-13 15:38:43 +0000 ===
+=== puma startup: 2018-01-13 15:38:43 +0000 ===
+=== puma startup: 2018-01-13 19:24:31 +0000 ===
+=== puma startup: 2018-01-13 20:15:18 +0000 ===
+=== puma startup: 2018-01-13 21:15:30 +0000 ===
+=== puma startup: 2018-01-13 21:23:52 +0000 ===
+=== puma startup: 2018-01-13 21:52:31 +0000 ===
+=== puma startup: 2018-01-13 21:58:36 +0000 ===
+=== puma startup: 2018-01-13 22:04:43 +0000 ===
+=== puma startup: 2018-01-15 07:08:36 +0000 ===
+=== puma startup: 2018-01-15 10:05:48 +0000 ===
+=== puma startup: 2018-01-15 10:11:52 +0000 ===
+=== puma startup: 2018-01-15 10:23:27 +0000 ===
+=== puma startup: 2018-01-16 11:21:18 +0000 ===
+=== puma startup: 2018-01-16 11:47:20 +0000 ===
+=== puma startup: 2018-01-16 14:17:32 +0000 ===
+=== puma startup: 2018-01-16 15:03:00 +0000 ===
+=== puma startup: 2018-01-16 15:09:00 +0000 ===
+=== puma startup: 2018-01-19 04:00:37 +0000 ===
+=== puma startup: 2018-01-20 01:46:58 +0000 ===
+=== puma startup: 2018-01-20 01:46:58 +0000 ===
+=== puma startup: 2018-01-20 16:36:02 +0000 ===
+=== puma startup: 2018-01-20 16:43:52 +0000 ===
+=== puma startup: 2018-01-20 16:48:19 +0000 ===
+Bad request content body
+Bad request content body
+Bad request content body
+2018-02-28 05:42:32 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-17 22:48:42 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-17 22:48:42 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-17 22:48:42 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-17 22:48:42 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 06:21:35 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 06:21:35 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 06:21:35 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 06:21:35 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 08:50:39 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 08:50:39 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 08:50:39 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+2018-03-19 08:50:39 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+---
+=== puma startup: 2018-05-01 22:08:01 +0000 ===
