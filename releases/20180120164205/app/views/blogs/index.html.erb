@@ -1,0 +1,63 @@
+<% provide(:title, "Blogs | What We Do") %>
+<% provide(:body_class, "about-us-page") %>
+<!--Learn More About Us Section-->
+<section class="learn-more-about-us-section">
+    <div class="container-fluid no-padding">
+        <div class="banner-container sf">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title-container col-xs-12 col-sm-12 col-lg-12">
+                        <div class="city-name">Blogs</div>
+                    </h1>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End of Learn More-->
+
+<!--About-us-info section-->
+<section class="info-about-us-section">
+    <div class="container">
+        <div class="row">
+            <div class="logo-container col-md-12"><span class="site-name sf">Top</span><span class="city-name">Blog</span></div>
+            <div class="col-md-12 info-text-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sed ut perspiciatis unde omnis iste natus.</div>
+        </div>
+        <div class="col-md-12 next-button-container">
+            <a class="next-button" ></a>
+        </div>
+    </div>
+</section>
+<!--End of About Us info section-->
+
+<!--Team info section-->
+<section class="team-info-container" id="team-info-container">
+    <div class="container">
+        <div class="row">
+            <div class="members-list col-xs-12 col-md-12">
+
+                <!--Member-->
+                <% @blogs.each do |blog| %>
+                <%= link_to(blog) do %>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 no-padding team-member">
+                   <%= image_tag "/uploads/" + blog.pic , class: 'img-responsive', alt: blog.pic %>
+                    <div class="info-container">
+                        <div class="name-container"><%= blog.title %></div>
+                    </div>
+                </div>
+                <% end %>
+                 <% end %>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!--End of Team info section-->
