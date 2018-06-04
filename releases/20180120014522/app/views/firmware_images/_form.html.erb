@@ -1,0 +1,17 @@
+<%= form_for(firmware_image) do |f| %>
+  <% if firmware_image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(firmware_image.errors.count, "error") %> prohibited this firmware_image from being saved:</h2>
+
+      <ul>
+      <% firmware_image.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
