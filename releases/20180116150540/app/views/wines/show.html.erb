@@ -1,0 +1,103 @@
+<% provide(:body_class, "place-page") %>
+<!--Start of banner section-->
+<section class="main-banner-section">
+  <div class="container-fluid no-padding">
+    <div class="banner-container">
+      <div class="container">
+        <div class="row">
+          <div class="text-container">
+            <h1>
+              <div class="category-title col-xs-12 col-sm-12 col-lg-12">
+                <span class="number"><%= @no %> <span class="separator"></span></span>
+                <span class="category-name"><%= @wine.name %></span>
+              </div>
+              <div class="location-wrapper col-xs-12 col-sm-12 col-lg-12">
+                <div class="share-container col-md-2 hidden-md hidden-lg  no-padding">
+                </div>
+              </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end of banner section-->
+<div class="social-modal">
+  <div class="container">
+    <h1>Share</h1>
+    <span class="glyphicon glyphicon-remove-circle"></span>
+  </div>
+</div> 
+
+<!--Start of main info container-->
+<section class="main-info-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 map-container">
+        <span>
+          <%= link_to image_tag( "/uploads/" + @wine.pic, class: 'img-responsive' )%>
+        </span>
+      </div>
+      <div class="col-md-8 text-container">
+        <div class="wine-title">
+          <h1 class="text-left"><%= @wine.name %></h1>
+        </div>
+        <div class="wine-short_description">
+          <span class="">
+           <%= @wine.short_des %>
+         </span>
+       </div>
+       <div class="wine-long_description">
+        <span>
+         <%= @wine.long_des %>
+       </span>
+     </div>
+     <div class="wine-region">
+       <strong class="text-info" >Regions:</strong><span style="margin-left: 14px">
+        <% unless @wine.regions == nil %>
+        <% @wine.regions.split(',').each do |element| %>
+        <a href="#">
+          <span class="regions-element "><%=  element %></span>
+          <% end %>
+        </span>
+      </a>
+      <% end %>
+    </div>
+    <div class="wine-supplyer">
+     <strong class="text-info">Supplyer:</strong>
+      <span style="margin-left: 14px">
+        <% unless @wine.supply == nil %>
+        <% @wine.supply.split(',').each_with_index do |element,index| %>
+        <a href="<%= @wine.supply_url.split(',').fetch(index) %>">
+          <span class="regions-element "><%=  element %></span>
+          <% end %>
+        </span>
+        </a>
+        <% end %>
+      </span>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<!--end of main info container -->
+<section class="place-slider-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 b_slider_wrapper">
+        <h1>Related wines</h1>
+        <div class="b_slider">
+          <%= image_tag 'Aglianico_del_Vulture_new.jpg', class: 'b_slider__slide img-responsive' %>
+          <%= image_tag 'Albarola_new.jpg', class: 'b_slider__slide img-responsive' %>
+          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
+          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
+          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
+          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
+          <%= image_tag 'Avana_new.jpg', class: 'b_slider__slide img-responsive' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,121 @@
+<% provide(:body_class, "about-us-page") %>
+<!-- Search caption section -->
+<section class="info-about-us-section">
+	<div class="container">
+		<div class="row">
+			<div class="logo-container col-md-12"><span class="site-name sf">Search for:</span>
+				<div class="col-md-12 info-text-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+					velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Sed ut perspiciatis unde omnis iste natus.</div>
+			</div>
+			<div class="col-md-12 next-button-container">
+				<a class="next-button" ></a>
+			</div>
+		</div>
+	</section>
+	<!-- Search Result Section -->
+	<% if @grapes == nil %>
+	<section class="search-result">
+		<div class="container" >
+			<% @wines.each_with_index do |wine, index| %>
+			<div class="social-modal">
+				<div class="container">
+					<h1>Share</h1>
+					<%= social_share_button_tag(wine.name, :image => asset_path("images-places-#{index+1}.png")) %>
+					<span class="glyphicon glyphicon-remove-circle"></span>
+				</div>                          
+			</div>
+			<!--Start of place cont-->
+			<div class="container-fluid ">
+				<div class="place-container container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-4 image-container no-padding hidden-sm hidden-xs">
+								<a href="<%= wines_path%>">
+									<img src="uploads/<%= wine.pic%>" class="img-responsive">
+								</a>
+							</div>
+							<div class="col-md-8 col-sm-12 col-xs-12 info-container">
+								<div class="header-section">
+									<div class="number-container"><%= index+1 %></div>
+									<div class="separator"></div>
+									<div class="name-container">
+										<div class="title-container"><%= set_title wine.name %></div>
+									</div>
+								</div>
+								<div class="image-for-mobile hidden-lg hidden-md">
+									<%= image_tag "images-places-#{index+1}.png", class: 'img-responsive' %>
+								</div>
+								<div class="main-text-container">
+									<p>
+										<%= wine.long_des %>
+									</p>
+								</div>
+
+								<div class="buttons-container">
+									<div class="learn-more-button"><%= link_to "READ MORE", wine %></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end of place container-->                          
+			<% end %>  
+		</div>
+	</section>
+	<% else %>
+	<section class="search-result">
+		<div class="container" ">
+		<% @grapes.each_with_index do |grape, index| %>
+		<div class="social-modal">
+			<div class="container">
+				<h1>Share</h1>
+				<%= social_share_button_tag(grape.name, :image => asset_path("images-places-#{index+1}.png")) %>
+				<span class="glyphicon glyphicon-remove-circle"></span>
+			</div>                          
+		</div>
+		<!--Start of place cont-->
+		<div class="container-fluid">
+			<div class="place-container container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-4 image-container no-padding hidden-sm hidden-xs">
+							<img src="uploads/<%= grape.pic%>" class="img-responsive">
+						</div>
+						<div class="col-md-8 col-sm-12 col-xs-12 info-container">
+							<div class="header-section">
+								<div class="number-container"><%= index+1 %></div>
+								<div class="separator"></div>
+								<div class="name-container">
+									<div class="title-container "><%= set_title grape.name %></div>
+								</div>
+							</div>
+							<div class="image-for-mobile hidden-lg hidden-md">
+								<%= image_tag "public/uploads/Aglianico_del_Vulture_new.jpg", class: 'img-responsive' %>
+							</div>
+							<div class="main-text-container">
+								<p>
+									<%= grape.short_des %>
+								</p>
+							</div>
+							<div class="buttons-container">
+								<div class="learn-more-button">
+									<%= link_to "READ MORE", grape %>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end of place container-->                          
+		<% end %> 
+		</div>
+	</section>
+	<% end %>
+	<!--Our partners section-->
