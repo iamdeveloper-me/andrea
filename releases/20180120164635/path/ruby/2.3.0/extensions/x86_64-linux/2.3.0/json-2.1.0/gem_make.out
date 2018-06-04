@@ -1,0 +1,13 @@
+current directory: /home/deploy/wine-grape/releases/20180120164635/path/ruby/2.3.0/gems/json-2.1.0/ext/json
+/usr/local/rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20180531-6636-1ipgc6y.rb extconf.rb
+creating Makefile
+
+current directory: /home/deploy/wine-grape/releases/20180120164635/path/ruby/2.3.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/deploy/wine-grape/releases/20180120164635/path/ruby/2.3.0/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/deploy/wine-grape/releases/20180120164635/path/ruby/2.3.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" install

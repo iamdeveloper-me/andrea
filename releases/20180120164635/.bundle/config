@@ -1,4 +1,4 @@
 ---
 BUNDLE_FROZEN: "true"
-BUNDLE_PATH: "/home/deploy/wine-grape/shared/bundle"
+BUNDLE_PATH: "path"
 BUNDLE_WITHOUT: "development:test"
