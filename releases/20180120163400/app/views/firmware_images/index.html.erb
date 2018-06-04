@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Firmware Images</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @firmware_images.each do |firmware_image| %>
+      <tr>
+      	<td><%= firmware_image.firmware_image_filename %></td>
+      	<td><%= image_tag '/uploads/alphasearch.png', class: 'img-responsive', alt: 'brunch places in San Francisco' %></td>
+        <td><%= link_to 'Show', firmware_image %></td>
+        <td><%= link_to 'Edit', edit_firmware_image_path(firmware_image) %></td>
+        <td><%= link_to 'Destroy', firmware_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Firmware Image', new_firmware_image_path %>
